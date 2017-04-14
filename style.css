@@ -211,7 +211,11 @@ img {
 	  
 	  
 	  
-	  
+	    .navbar-toggle {
+  
+    float: left !important;
+  
+	  }
 	  
 	   
 .dropdown-menu > li.kopie > a {
