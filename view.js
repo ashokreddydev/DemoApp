@@ -1,7 +1,7 @@
 (function(){
 
 
-
+document.getElementById("headNmame").innerHTML= localStorage.getItem("Scanname");
 
 document.getElementById("myImg1").src= localStorage.getItem("path");
 document.getElementById("myImg2").src= localStorage.getItem("path");

@@ -9,6 +9,7 @@
 	
 	function routeProvider(event)
 	{
+		//var title="";
 		localStorage.clear();
 	console.log(document.getElementsByTagName('img'))
 	
@@ -16,7 +17,9 @@
 
 	if(event.currentTarget.id=="btnCtrl1")
 	{
-		console.log(document.getElementsByTagName('img')[0].src)
+		//console.log(document.getElementsByTagName('img')[0].src)
+		//title=document.getElementById("t1").value;
+		localStorage.setItem("Scanname","BRAIN CT")
 
 			localStorage.setItem("path", document.getElementsByTagName('img')[0].src);
 			
@@ -24,18 +27,22 @@
 	}
 	else if(event.currentTarget.id=="btnCtrl2")
 	{
-
+//title=document.getElementById("t2").value;
+localStorage.setItem("Scanname","PNS CT")
 
 	localStorage.setItem("path", document.getElementsByTagName('img')[1].src);
 
 	}
 	else if(event.currentTarget.id=="btnCtrl3")
 	{
+		//title=document.getElementById("t3").value;
+		localStorage.setItem("Scanname","SPINE CT")
 
 	localStorage.setItem("path", document.getElementsByTagName('img')[2].src);
 
 
 	}
+
 		
 		  window.location.assign("view.html")
 	}
