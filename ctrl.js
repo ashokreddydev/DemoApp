@@ -7,11 +7,37 @@
 	
 	
 	
-	function routeProvider()
+	function routeProvider(event)
 	{
+		localStorage.clear();
+	console.log(document.getElementsByTagName('img'))
+	
+	console.log(event.currentTarget.id)
+
+	if(event.currentTarget.id=="btnCtrl1")
+	{
+		console.log(document.getElementsByTagName('img')[0].src)
+
+			localStorage.setItem("path", document.getElementsByTagName('img')[0].src);
+			
+
+	}
+	else if(event.currentTarget.id=="btnCtrl2")
+	{
+
+
+	localStorage.setItem("path", document.getElementsByTagName('img')[1].src);
+
+	}
+	else if(event.currentTarget.id=="btnCtrl3")
+	{
+
+	localStorage.setItem("path", document.getElementsByTagName('img')[2].src);
+
+
+	}
 		
-		
-		 window.location.assign("view.html")
+		  window.location.assign("view.html")
 	}
 	
 	btn1.addEventListener("click",routeProvider);
