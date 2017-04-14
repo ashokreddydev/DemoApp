@@ -12,6 +12,10 @@ document.getElementById("myImg4").src= localStorage.getItem("path");
 
 document.getElementById("myImg5").src= localStorage.getItem("path");
 document.getElementById("myImg6").src= localStorage.getItem("path");
+document.getElementById("img1").src= localStorage.getItem("path");
+document.getElementById("img2").src= localStorage.getItem("path");
+document.getElementById("img3").src= localStorage.getItem("path");
+document.getElementById("img4").src= localStorage.getItem("path");
 
 
 
