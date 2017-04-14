@@ -17,7 +17,19 @@ document.getElementById("myImg6").src= localStorage.getItem("path");
 
 
 
+	var btn1 = document.getElementById("backbtn");
+	
+	
+	
+	function backbutton()
+	{
+		
 
+		
+		  window.location.assign("index.html")
+	}
+	
+	btn1.addEventListener("click",backbutton);
 
 
 
